@@ -15,7 +15,7 @@ This initiative deals with the future of AviUtl or its successor.
 AviUtlには以下のような問題を抱えています。
 
 1. 32-bitプログラムなので、メモリ不足に陥りがち
-2. 1つのプラグインは1回以上呼び出すことが出来ない
+2. 同じプラグインは2回呼び出すことが出来ない
 3. 国際化に対応しておらず，UIを地域化するのが難しい
 4. CPUアクセラレーションを活用できていない
 

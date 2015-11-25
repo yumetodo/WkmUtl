@@ -33,14 +33,14 @@
 * Reserves for Side-by-Side(SBS) preview, NLE and Audio Mixer
 * If it is not set for SBS or retracted, preview carry out in Main Window
 * If it is set for SBS and visible, Main Window plays the original, this panel plays the processed image
-* Different timing/length from original video: <To be discuss>
+* Different timing/length from original video: (To be discussed)
 
 ### Panel 3
 * Multi-purpose panel
 * For NLE or Audio Mixer
 * Introduce two special tracks: BG and Profile
 * BG represents the file loaded via D&D-ing on to the Main Window
-* Should BG be broken into Audio and Video tracks? <To be discuss>
+* Should BG be broken into Audio and Video tracks? (To be discussed)
 * Profile represents the application of Plugin-setting collectives
 * Layer 1 comes next, higher Layer No. on top.
 
@@ -54,7 +54,7 @@
 
 ### Panel 5
 * Plugin property window
-* Floating/Fixed ? <To be discuss>
+* Floating/Fixed ? (To be discussed)
 * Basically the same as the AviUtl plugin interface
 * Need to support TAB to better organize controls
 * Having an easy way to add ComboListBox, textbox and Tooltips would be nice

@@ -18,50 +18,50 @@
 (with reference to ``DesignConcept01.png``)
 
 ### Panel 1
-*- Main Window
-*- Coordinate system same as AviUtl
-*- Panel extension/retraction buttons on the 3 edges (purple 7)
-*- Move Decoder/Encoder options visible at top menu since these are frequently accessed. Items include "Type", "Priority", "Details"
-*- Selection_Mode: "Single" and "Multi" option. "Single" behaves like AviUtl, "Multi" allows multiple segment selection by pressing the bracket keys multiple times.For example: ``[→→]→→→[→]`` would select 2 segments instead of one
-*- Playback: The usual Play/Stop/Loop
-*- Any file loaded via D&D on to the main Window, should be showing up in the NLE panel(3) special track "BG"
-*- Showing oversized image: Let user to choose "Fit to window" or "Partial(or a magnification)", never expand the window automatically as that may make subsequent operation difficult, e.g. a 4K video showing on a FullHD display: all other panels will be pushed out of screen
+* Main Window
+* Coordinate system same as AviUtl
+* Panel extension/retraction buttons on the 3 edges (purple 7)
+* Move Decoder/Encoder options visible at top menu since these are frequently accessed. Items include "Type", "Priority", "Details"
+* Selection_Mode: "Single" and "Multi" option. "Single" behaves like AviUtl, "Multi" allows multiple segment selection by pressing the bracket keys multiple times.For example: ``[→→]→→→[→]`` would select 2 segments instead of one
+* Playback: The usual Play/Stop/Loop
+* Any file loaded via D&D on to the main Window, should be showing up in the NLE panel(3) special track "BG"
+* Showing oversized image: Let user to choose "Fit to window" or "Partial(or a magnification)", never expand the window automatically as that may make subsequent operation difficult, e.g. a 4K video showing on a FullHD display: all other panels will be pushed out of screen
 
 ### Panel 2
-*- Multi-purpose panel
-*- Content can be changed via "panel_type" menu
-*- Reserves for Side-by-Side(SBS) preview, NLE and Audio Mixer
-*- If it is not set for SBS or retracted, preview carry out in Main Window
-*- If it is set for SBS and visible, Main Window plays the original, this panel plays the processed image
-*- Different timing/length from original video: <To be discuss>
+* Multi-purpose panel
+* Content can be changed via "panel_type" menu
+* Reserves for Side-by-Side(SBS) preview, NLE and Audio Mixer
+* If it is not set for SBS or retracted, preview carry out in Main Window
+* If it is set for SBS and visible, Main Window plays the original, this panel plays the processed image
+* Different timing/length from original video: <To be discuss>
 
 ### Panel 3
-*- Multi-purpose panel
-*- For NLE or Audio Mixer
-*- Introduce two special tracks: BG and Profile
-*- BG represents the file loaded via D&D-ing on to the Main Window
-*- Should BG be broken into Audio and Video tracks? <To be discuss>
-*- Profile represents the application of Plugin-setting collectives
-*- Layer 1 comes next, higher Layer No. on top.
+* Multi-purpose panel
+* For NLE or Audio Mixer
+* Introduce two special tracks: BG and Profile
+* BG represents the file loaded via D&D-ing on to the Main Window
+* Should BG be broken into Audio and Video tracks? <To be discuss>
+* Profile represents the application of Plugin-setting collectives
+* Layer 1 comes next, higher Layer No. on top.
 
 ### Panel 4
-*- Filter Graph
-*- Somewhat similar to ExEdit's object's panel. User can choose to use a plugin by pressing the + button on top right, browse through categories, and select the desired plugin
-*- Categorization is a MUST or the plugin list will get out-of-control. Optionally add a search box in (6) to speed up operation
-*- Each item in Filter graph should provide buttons to move its priority, show its setting dialog (5) and a switch to quickly turn it ON and OFF
-*- Tabbed, dividing Video Filter Graph and Audio Filter Graph
-*- There should be a button(and optionally a textbox), for each tab, for saving plugin configurations into a profile. The profiles should be accessible from the NLE's Profile track.
+* Filter Graph
+* Somewhat similar to ExEdit's object's panel. User can choose to use a plugin by pressing the + button on top right, browse through categories, and select the desired plugin
+* Categorization is a MUST or the plugin list will get out-of-control. Optionally add a search box in (6) to speed up operation
+* Each item in Filter graph should provide buttons to move its priority, show its setting dialog (5) and a switch to quickly turn it ON and OFF
+* Tabbed, dividing Video Filter Graph and Audio Filter Graph
+* There should be a button(and optionally a textbox), for each tab, for saving plugin configurations into a profile. The profiles should be accessible from the NLE's Profile track.
 
 ### Panel 5
-*- Plugin property window
-*- Floating/Fixed ? <To be discuss>
-*- Basically the same as the AviUtl plugin interface
-*- Need to support TAB to better organize controls
-*- Having an easy way to add ComboListBox, textbox and Tooltips would be nice
-*- WkmUtl must provide language info to plugin so that plugin i18n would be easier
+* Plugin property window
+* Floating/Fixed ? <To be discuss>
+* Basically the same as the AviUtl plugin interface
+* Need to support TAB to better organize controls
+* Having an easy way to add ComboListBox, textbox and Tooltips would be nice
+* WkmUtl must provide language info to plugin so that plugin i18n would be easier
 
 ### Other thoughts
-*- Maybe it is possible to disband the idea of "default image data structure"
-*- Instead of requiring each plugin to convert image to YC48 by the end of processing, just require plugins to specify what they expect to be the input, and what they output. It may be even better to require plugins to declare where they intend to take image data from: from file, from System RAM, or from Video Memory.
-*- Automatic format conversion can be carried out when there is a IO-type mismatch between two consecutive items in the filter graph
-*- The final image format depends on what is easy for the rendering/output facilities.
+* Maybe it is possible to disband the idea of "default image data structure"
+* Instead of requiring each plugin to convert image to YC48 by the end of processing, just require plugins to specify what they expect to be the input, and what they output. It may be even better to require plugins to declare where they intend to take image data from: from file, from System RAM, or from Video Memory.
+* Automatic format conversion can be carried out when there is a IO-type mismatch between two consecutive items in the filter graph
+* The final image format depends on what is easy for the rendering/output facilities.

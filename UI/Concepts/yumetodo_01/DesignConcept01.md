@@ -68,6 +68,8 @@ There is a funny expression. Excuse me.
 ### 9
 - Movie Setting
 - Since teamed design on the assumption that incorporates ``拡張編集``, I thought this layout
+- When you double-click the Video-Object, this window will be open.
+- When you double-click the Video-Object, ``Seek Bar``(3) will be switch.It becomes easier cut editing of the video object.
 
 ### 10
 - Resources
